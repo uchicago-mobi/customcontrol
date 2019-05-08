@@ -11,11 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     let dualSlider = DualSlider(frame: CGRect.zero)
+    let lowerLabel = UILabel()
+    let upperLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         dualSlider.backgroundColor = UIColor.darkGray
         view.addSubview(dualSlider)
+        
+        view.addSubview(lowerLabel)
+        view.addSubview(upperLabel)
     }
 
     override func viewDidLayoutSubviews() {
@@ -27,6 +32,23 @@ class ViewController: UIViewController {
             width: width,
             height: 31.0
         )
+        
+        lowerLabel.frame = CGRect(
+            x: margin,
+            y: margin * 3 + 40,
+            width: 120,
+            height: 31.0
+        )
+        
+        upperLabel.frame = CGRect(
+            x: width,
+            y: margin * 3 + 40,
+            width: 120,
+            height: 31.0
+        )
+
+        lowerLabel.text = "0"
+        upperLabel.text = "100"
     }
 }
 
