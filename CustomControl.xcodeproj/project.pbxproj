@@ -13,6 +13,8 @@
 		763520D9228285790000BC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763520D8228285790000BC80 /* Assets.xcassets */; };
 		763520DC228285790000BC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763520DA228285790000BC80 /* LaunchScreen.storyboard */; };
 		763520E7228285790000BC80 /* CustomControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763520E6228285790000BC80 /* CustomControlTests.swift */; };
+		763520F222828DF60000BC80 /* DualSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763520F122828DF60000BC80 /* DualSlider.swift */; };
+		763520F4228293C80000BC80 /* DualSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763520F3228293C80000BC80 /* DualSliderThumbLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		763520E2228285790000BC80 /* CustomControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		763520E6228285790000BC80 /* CustomControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlTests.swift; sourceTree = "<group>"; };
 		763520E8228285790000BC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763520F122828DF60000BC80 /* DualSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSlider.swift; sourceTree = "<group>"; };
+		763520F3228293C80000BC80 /* DualSliderThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSliderThumbLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		763520D0228285780000BC80 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				763520F122828DF60000BC80 /* DualSlider.swift */,
 				763520D1228285780000BC80 /* AppDelegate.swift */,
 				763520D3228285780000BC80 /* ViewController.swift */,
 				763520D5228285780000BC80 /* Main.storyboard */,
 				763520D8228285790000BC80 /* Assets.xcassets */,
 				763520DA228285790000BC80 /* LaunchScreen.storyboard */,
 				763520DD228285790000BC80 /* Info.plist */,
+				763520F3228293C80000BC80 /* DualSliderThumbLayer.swift */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			files = (
 				763520D4228285780000BC80 /* ViewController.swift in Sources */,
 				763520D2228285780000BC80 /* AppDelegate.swift in Sources */,
+				763520F222828DF60000BC80 /* DualSlider.swift in Sources */,
+				763520F4228293C80000BC80 /* DualSliderThumbLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

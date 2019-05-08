@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let dualSlider = DualSlider(frame: CGRect.zero)
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        dualSlider.backgroundColor = UIColor.darkGray
+        view.addSubview(dualSlider)
     }
 
-
+    override func viewDidLayoutSubviews() {
+        let margin: CGFloat = 20.0
+        let width = view.bounds.width - 2.0 * margin
+        dualSlider.frame = CGRect(
+            x: margin,
+            y: margin * 3,
+            width: width,
+            height: 31.0
+        )
+    }
 }
 
