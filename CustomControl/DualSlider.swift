@@ -64,6 +64,9 @@ class DualSlider: UIControl {
     }
 
     func updateLayerFrames() {
+        print("lower: \(self.lowerValue)")
+        print("upper: \(self.upperValue)")
+        
         inactiveLayer.frame = CGRect(
             x: 0,
             y: bounds.height / 3,
