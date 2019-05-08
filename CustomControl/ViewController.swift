@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     let dualSlider = DualSlider(frame: CGRect.zero)
     let lowerLabel = UILabel()
     let upperLabel = UILabel()
@@ -21,6 +20,9 @@ class ViewController: UIViewController {
         
         view.addSubview(lowerLabel)
         view.addSubview(upperLabel)
+        
+        lowerLabel.text = "0"
+        upperLabel.text = "1"
     }
 
     override func viewDidLayoutSubviews() {
@@ -34,21 +36,18 @@ class ViewController: UIViewController {
         )
         
         lowerLabel.frame = CGRect(
-            x: margin,
+            x: margin + 20,
             y: margin * 3 + 40,
             width: 120,
             height: 31.0
         )
         
         upperLabel.frame = CGRect(
-            x: width,
+            x: width - 20,
             y: margin * 3 + 40,
             width: 120,
             height: 31.0
         )
-
-        lowerLabel.text = "0"
-        upperLabel.text = "100"
     }
 }
 

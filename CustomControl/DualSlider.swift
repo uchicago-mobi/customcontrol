@@ -7,20 +7,20 @@
 //
 
 import UIKit
-import QuartzCore
 
 class DualSlider: UIControl {
     var minimumValue = 0.0
     var maximumValue = 1.0
     var lowerValue = 0.2
     var upperValue = 0.8
+    
     var previousLocation = CGPoint()
     
     let inactiveLayer = CALayer()
     let activatedLayer = CALayer()
     let lowerThumbLayer = DualSliderThumbLayer()
     let upperThumbLayer = DualSliderThumbLayer()
-    
+        
     var thumbWidth: CGFloat {
         return CGFloat(bounds.height)
     }
@@ -64,9 +64,6 @@ class DualSlider: UIControl {
     }
 
     func updateLayerFrames() {
-        print("lower: \(self.lowerValue)")
-        print("upper: \(self.upperValue)")
-        
         inactiveLayer.frame = CGRect(
             x: 0,
             y: bounds.height / 3,
@@ -151,6 +148,5 @@ class DualSlider: UIControl {
         lowerThumbLayer.highlighted = false
         upperThumbLayer.highlighted = false
     }
-
 
 }
