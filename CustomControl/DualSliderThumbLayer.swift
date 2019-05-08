@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import QuartzCore
 
 class DualSliderThumbLayer: CALayer {
     var highlighted = false
